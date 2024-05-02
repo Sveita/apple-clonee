@@ -11,8 +11,7 @@ fetch("../component/layout/navba.html")
         let menuContainer = document.querySelector("#menu-container");
         let listContainer = document.querySelector("#list-container");
 
-        function Menu(e) {
-        e.name = e.name === 'menu' ? 'close' : 'menu';
+
         menuBtn.addEventListener("click", () => {
             setTimeout(() => {
             menuContainer.classList.toggle("h-[100vh]");
@@ -23,9 +22,10 @@ fetch("../component/layout/navba.html")
             listContainer.classList.toggle("opacity-100");
             listContainer.classList.toggle("invisible");
             }, 400); // Adjust the delay time (in milliseconds) as needed
-        });
+
+        })
+
         
-        }
 
         let store = document.getElementById('store')
         let storeContainer = document.getElementById('store-container')
