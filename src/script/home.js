@@ -1,5 +1,5 @@
 const home = document.querySelector(".home");
-fetch("../home/component/home.html")
+fetch("../component/home/home.html")
   .then((res) => res.text())
   .then((data) => {
     home.innerHTML = data;
