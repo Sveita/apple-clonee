@@ -1,1 +1,0 @@
-import * as footer from "./footer.js";
