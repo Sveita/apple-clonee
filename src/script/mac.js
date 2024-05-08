@@ -45,21 +45,27 @@ fetch("../component/mac page/mac.html")
     let container1 = document.querySelector('.container1')
     let container2 = document.querySelector('.container2')
     let container3 = document.querySelector('.container3')
+    let macIphone = document.querySelector('.macIphone')
+    let macIpad = document.querySelector('.macIpad')
+    let macWatch = document.querySelector('.macWatch')
 
     iphone.addEventListener('click', () => {
       arrow1.classList.toggle('rotate-180')
       container1.classList.toggle('hidden')
+      macIphone.classList.toggle('hidden')
     })
 
     ipad.addEventListener('click', () => {
       arrow2.classList.toggle('rotate-180')
       container2.classList.toggle('hidden')
+      macIpad.classList.toggle('hidden')
     })
 
 
     watch.addEventListener('click', () => {
       arrow3.classList.toggle('rotate-180')
       container3.classList.toggle('hidden')
+      macWatch.classList.toggle('hidden')
     })
   })
 
