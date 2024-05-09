@@ -6,32 +6,23 @@
     font-family: "Nunito Sans", sans-serif; 
 }
 
-.nav{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    font-size: small;
-    font-style: normal;
-    color: black;
-    font-size: 18px;
-    font-family: "Nunito Sans", sans-serif;
-    align-items: center;
-  }
-
-.container{
-    height: 40px;
-}
-
-.search{
-    width:15px;
-}
-
-.bag{
-    width: 18px;
-}
 
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%)
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+.slider-animate {
+    animation: slide 15s linear infinite;
+}
