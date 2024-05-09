@@ -2,9 +2,14 @@ REVIEWBOARD_URL = "https://review.clp.kr"
 REPOSITORY = "HexCode/Neav-Rothanasveita/Apple-Clone"
 REPOSITORY_TYPE = "git"
 <<<<<<< HEAD
+<<<<<<< HEAD
 BRANCH = "develop"
 LAND_DEST_BRANCH = "develop"
 =======
 BRANCH = "feature/storePage"
 LAND_DEST_BRANCH = "feature/storePage"
 >>>>>>> 2c69aca (feature : storePage rebase dev)
+=======
+BRANCH = "feature/storePage"
+LAND_DEST_BRANCH = "feature/storePage"
+>>>>>>> refs/remotes/origin/feature/storePage
