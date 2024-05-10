@@ -1,7 +1,7 @@
 
 
 
-const navba= document.querySelector(".navbar");
+const navba = document.querySelector(".navbar");
 fetch("../component/layout/navba.html")
     .then((res) => res.text())
     .then((data) => {
