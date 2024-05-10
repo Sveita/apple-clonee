@@ -67,6 +67,48 @@ fetch("../component/mac page/mac.html")
       container3.classList.toggle('hidden')
       macWatch.classList.toggle('hidden')
     })
+
+    function carouselMac (slider, back, next) {
+      next.addEventListener('click', () => {
+        slider.scrollBy({
+          left: 400,
+          behavior: "smooth",
+        })
+      })
+      back.addEventListener("click", () => {
+        slider.scrollBy({
+          left: -400,
+          behavior: "smooth"
+        })
+      })
+    }
+
+    const backMac = document.getElementById('backMac')
+    const nextMac = document.getElementById('nextMac')
+    const sliderMac = document.getElementById('sliderMac')
+
+    backMac.addEventListener("click", carouselMac(sliderMac, backMac, nextMac))
+    nextMac.addEventListener("click", carouselMac(sliderMac, backMac, nextMac))
+
+    const backMac2 = document.getElementById('backMac2')
+    const nextMac2 = document.getElementById('nextMac2')
+    const sliderMac2 = document.getElementById('sliderMac2')
+
+    backMac2.addEventListener("click", carouselMac(sliderMac2, backMac2, nextMac2))
+    nextMac2.addEventListener("click", carouselMac(sliderMac2, backMac2, nextMac2))
+
+
+
+    const backMac3 = document.getElementById('backMac3')
+    const nextMac3 = document.getElementById('nextMac3')
+    const sliderMac3 = document.getElementById('sliderMac3')
+
+    backMac.addEventListener("click", carouselMac(sliderMac3, backMac3, nextMac3))
+    nextMac3.addEventListener("click", carouselMac(sliderMac3, backMac3, nextMac3))
+
+    nextMac1.addEventListener('click',() => {
+      alert('hi')
+    })
   })
 
   .catch((error) => console.error("Error fetching included file:", error));
