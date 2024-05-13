@@ -1,7 +1,0 @@
-REVIEWBOARD_URL = "https://review.clp.kr"
-REPOSITORY = "HexCode/Neav-Rothanasveita/Apple-Clone"
-REPOSITORY_TYPE = "git"
-<<<<<<< HEAD
-<<<<<<< HEAD
-BRANCH = "develop"
-LAND_DEST_BRANCH = "develop"
