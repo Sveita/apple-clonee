@@ -1,11 +1,11 @@
 
 
 
-const navba = document.querySelector(".navbar");
-fetch("../component/layout/navba.html")
+const navbar = document.querySelector(".navbar");
+fetch("../pages/layout/navbar.html")
     .then((res) => res.text())
     .then((data) => {
-        navba.innerHTML = data;
+        navbar.innerHTML = data;
 
         let menuBtn = document.querySelector("#menu-btn");
         let menuContainer = document.querySelector("#menu-container");
