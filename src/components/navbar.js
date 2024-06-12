@@ -2,7 +2,7 @@
 
 
 const navbar = document.querySelector(".navbar");
-fetch("../pages/layout/navbar.html")
+fetch("../../pages/layout/navbar.html")
     .then((res) => res.text())
     .then((data) => {
         navbar.innerHTML = data;
