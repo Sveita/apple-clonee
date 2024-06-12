@@ -91,9 +91,9 @@ const ipadCard = (arr) => {
         return `
         <div>
           <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-            <img src="${image}" alt="">
-            <h3 class="xl:text-3xl text-xl font-semibold py-4 "> ${title}</h3>
-            <li class="list-none xl:text-xl text-lg font-medium pb-4">${content}</li>
+            <img src="${arr.image}" alt="">
+            <h3 class="xl:text-3xl text-xl font-semibold py-4 "> ${arr.title}</h3>
+            <li class="list-none xl:text-xl text-lg font-medium pb-4">${arr.content}</li>
             <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
           </div>                    
         </div>`
