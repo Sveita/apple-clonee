@@ -1,89 +1,124 @@
-const column = (arr) => {
-    return `
-    <div class="md:h-[700px] h-[500px] ${bgColor} overflow-hidden">
-        <div class="w-full">
-            <div class="flex pt-12 pb-2 justify-center mx-auto">
-            <img
-                class="w-9 h-9 mr-2"
-                src="${appleLogo}"
-                alt=""
-            />
-            <h1 class="text-4xl nunito font-medium ${textColor}">${title}</h1>
-            </div>
-            ${extraText}
-            <li
-            class="text-xl md:text-2xl nunito mx-auto text-center ${textExtraColor} list-none font-extralight pb-4"
-            >
-            ${text}
-            </li>
-        </div>
-        <div class="flex justify-center gap-6">
-            <button
-            class="bg-[#3B82F6] text-[#ffffff] py-2 px-5 rounded-full text-base nunito hover:bg-[#3B82F6]"
-            >
-            ${button}
-            </button>
-            <button
-            class="text-[#3B82F6] py-2 px-5 rounded-full text-base nunito hover:bg-[#3B82F6] border-[#3B82F6] border-2 hover:text-[#ffffff]"
-            >
-            ${button2}
-            </button>
-        </div>
-        <img
-            class="w-full h-full object-cover"
-            src="${image}"
-            alt=""
-        />
-    </div>
+const homeCard = (arr) => {
+    return 
     `
-}
+    <div class="flex flex-col gap-5 mt-5 lg:grid grid-cols-2">
+        ${arr.map((item) => {
+            return 
+            `
+            <div class="md:h-[700px] h-[500px] ${arr.bgColor} overflow-hidden">
+            <div class="w-full">
+                <div class="flex pt-12 pb-2 justify-center mx-auto">
+                <img
+                    class="w-9 h-9 mr-2"
+                    src="${arr.apple}"
+                    alt=""/>
+                <h1 class="text-4xl nunito font-medium ${arr.titleColor}">${arr.title}</h1>
+                </div>
+                <li
+                class="text-base nunito mx-auto text-center text-red-600 list-none font-extralight pb-2">
+                ${arr.extra}
+                </li>
+                <li
+                class="text-xl md:text-2xl nunito mx-auto text-center ${arr.contentColor} list-none font-extralight pb-4">
+                ${arr.content}
+                </li>
+            </div>
+            <div class="flex justify-center gap-6">
+                <button
+                class="bg-[#0071e3] text-white py-2 px-5 rounded-full text-base nunito hover:bg-[#519de9]">
+                ${arr.blueBtn}
+                </button>
+                <button
+                class="text-[#0071e3] py-2 px-5 rounded-full text-base nunito hover:bg-[#0071e3] border-[#0071e3] border-2 hover:text-white">
+                ${arr.whiteBtn}
+                </button>
+            </div>
+            <img
+                class="w-full h-full object-cover"
+                src="${arr.image}"
+                alt=""/>
+            </div>    
+        `;}).join(" ")}
+    </div> 
+    `;
+};
 
-const columnArr = [{
+const homeArray = [
+{
     bgColor : "bg-[#f5f5f6]",
-    textColor : "text-[#000000]",
-    image : "../../image/homepage/macbook 5.png",
-    button : "Learn more",
-    button2 : "Buy", 
+    apple : " ",
+    titleColor : " ",
+    title : " ",
+    extra : " ",
+    contentColor : " ",
+    content : " ",
+    blueBtn : " ",
+    whiteBtn : " ",
+    image : "../image/homepage/version pro .jpeg"
 },
+// 2
 {
-    appleLogo : "../../image/homepage/apple (3).png",
-    title : "WATCH",
-    bgColor : "bg-[#000000]",
-    textColor : "text-[#000000]" ,
-    textExtraColor : "text-[#EF4444]",
-    extraTextext : "SERIES 9" ,
-    text : "smarter. Brighter. Mightier"
-    button : "Learn more",
-    button2 : "Buy",
-    image : "../../image/homepage/macbook 5.png"
+    bgColor : "bg-[#f5f5f6]",
+    apple : " ",
+    titleColor : "text-[#000000] ",
+    title : " MacBook Air",
+    extra : " ",
+    contentColor : "text-[#000000] ",
+    content : " Lean. Mean. M3 machine.",
+    blueBtn : " Learn more",
+    whiteBtn : "Buy ",
+    image : "../image/homepage/macbook 5.png"
 },
+// 3
 {
-    appleLogo : "../../image/homepage/apple (3).png",
-    title : "MacBook Air",
-    bgColor : "bg-[#fbfbfb]",
-    textColor : "text-[#000000]" ,
-    text : "Lean. Mean. M3 machine.",
-    button : "Learn more",
-    button2 : "Buy",
-    image : "../../image/homepage/ipad 7.png"
+    bgColor : " ",
+    apple : " ",
+    titleColor : " ",
+    title : " ",
+    extra : " ",
+    contentColor : " ",
+    content : " ",
+    blueBtn : "Learn more",
+    whiteBtn : "Buy",
+    image : " "
 },
+// 4
 {
-    appleLogo : "../../image/homepage/apple (3).png",
-    title : "Card",
-    text : "Get up to 3% Dialy cash back with every purchase.",
-    bgColor : "bg-[#fbfbfb]",
-    textColor : "text-[#000000]" ,
-    button : "Learn more",
-    button2 : "Buy",
-    image : "../../image/homepage/card 8.png"
-}]
-
-class cardDesign extends HTMLElement {
-    constructor(){
-        super()
-    }
-    connectedCallback(){
-        this.innerHTML = column(columnArr);
-    }
-}
-customElements.define("columns-content", Column)
+    bgColor : " ",
+    apple : " ",
+    titleColor : " ",
+    title : " ",
+    extra : " ",
+    contentColor : " ",
+    content : " ",
+    blueBtn : "Learn more",
+    whiteBtn : "Buy",
+    image : " "
+},
+// 5
+{
+    bgColor : " ",
+    apple : " ",
+    titleColor : " ",
+    title : " ",
+    extra : " ",
+    contentColor : " ",
+    content : " ",
+    blueBtn : "Learn more",
+    whiteBtn : "Buy",
+    image : " "
+},
+// 6
+{
+    bgColor : " ",
+    apple : " ",
+    titleColor : " ",
+    title : " ",
+    extra : " ",
+    contentColor : " ",
+    content : " ",
+    blueBtn : "Learn more",
+    whiteBtn : "Buy",
+    image : " "
+},
+]

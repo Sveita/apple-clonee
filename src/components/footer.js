@@ -1,6 +1,6 @@
 // Footer
 const footer = document.querySelector(".footer");
-fetch("../component/layout/footer.html")
+fetch("../pages/layout/footer.html")
   .then((res) => res.text())
   .then((data) => {
     footer.innerHTML = data;

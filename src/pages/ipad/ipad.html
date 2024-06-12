@@ -180,109 +180,13 @@
   
   
       <div class="w-full flex relative items-center group">
-          <div  id="slider" class="flex w-10/12 lg:overflow-x-hidden overflow-x-scroll  mx-auto px-4 items-center gap-8 pb-10 mb-20 pt-10 cursor-pointer group">
-              <!-- card1 -->
-              <div class="">
-                  <div class="xl:h-[750px] xl:w-[400px] h-[600px] w-[300px] duration-500 rounded-3xl overflow-hidden relative shadow-xl hover:scale-[102%]" >
-                      <div class="absolute ml-8 mt-14 text-white">
-                          <h6 class="text-[17px] font-medium ">Productivity</h6>
-                          <h2 class="text-2xl font-medium">Your workplace <br> can be any place</h2>
-                      </div>
-                      <img class="w-full h-full" src="https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_productivity__d55aee5so6ky_large.jpg" alt="">
-                      <div class="absolute bottom-4 right-4 ">
-                          <img class="w-8 " src="../../image/mac/plus.png" alt="">
-                      </div>
-                  </div>
-              </div>
-          
-          
-              <!-- card2-->
-          
-              <div  class="">
-                  <div class="xl:h-[750px] xl:w-[400px] h-[600px] w-[300px]  duration-500 rounded-3xl overflow-hidden relative shadow-xl hover:scale-[102%]" >
-                      <div class="absolute ml-8 mt-14 text-white">
-                          <h6 class="text-[17px] font-medium ">creativity</h6>
-                          <h2 class="text-2xl font-medium">Take your inner artist <br> out and about.</h2>
-                      </div>
-                      <img class="w-full h-full" src="https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_creativity__gcfv7x90x42u_large.jpg" alt="">
-                      <div class="absolute bottom-4 right-4 ">
-                      <img class="w-8 " src="../../image/mac/plus.png" alt="">
-                  </div>
-                  </div>
-              </div>
-          
-          
-          
-          
-          
-              <!-- card3 -->
-              <div  class="">
-                  <div class="xl:h-[750px] xl:w-[400px] h-[600px] w-[300px]  duration-500 rounded-3xl overflow-hidden relative shadow-xl hover:scale-[102%]" >
-                      <div class="absolute ml-8 mt-14 text-white">
-                          <h6 class="text-[17px] font-medium ">Learning</h6>
-                          <h2 class="text-2xl font-medium ">Your classroom <br> can be anywhere.</h2>
-                      </div>
-                      <img class="w-full h-full" src="https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_learning__es1tt702bf6u_large.jpg" alt="">
-                      <div class="absolute bottom-4 right-4 ">
-                          <img class="w-8 " src="../../image/mac/plus.png" alt="">
-                      </div>
-                  </div>
-              </div>
-          
-          
-          
-          
-              <!-- card4 -->
-              <div  class="">
-                  <div class="xl:h-[750px] xl:w-[400px] h-[600px] w-[300px]  duration-500 rounded-3xl overflow-hidden relative shadow-xl hover:scale-[102%]" >
-                      <div class="absolute ml-8 mt-14 text-white">
-                          <h6 class="text-[17px] font-medium ">Entertainment</h6>
-                          <h2 class="text-2xl font-medium">Kick back. Tune in.<br> Game on.</h2>
-                      </div>
-                      <img class="w-full h-full" src="https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_entertainment__dcynvyyoe7iq_large.jpg" alt="">
-                      <div class="absolute bottom-4 right-4 ">
-                          <img class="w-8 " src="../../image/mac/plus.png" alt="">
-                      </div>
-                  </div>
-              </div>
-          
-          
-          
-          
-              <!-- card5 -->
-              <div  class="">
-                  <div class="xl:h-[750px] xl:w-[400px] h-[600px] w-[300px]  duration-500 rounded-3xl overflow-hidden relative shadow-xl hover:scale-[102%]" >
-                      <div class="absolute ml-8 mt-14  text-white">
-                          <h6 class="text-[17px] font-medium ">Apple Pencil</h6>
-                          <h2 class="text-2xl font-medium">Dream it up. <br> Jot it down.</h2>
-                      </div>
-                      <img class="w-full h-full" src="https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_pencil__coz76i7lwsuq_large.jpg" alt="">
-                      <div class="absolute bottom-4 right-4 ">
-                          <img class="w-8  " src="../../image/mac/plus.png" alt="">
-                      </div>
-                  </div>
-              </div>
-          
-          
-          
-              <!-- card6 -->
-              <div  class="">
-                  <div class="xl:h-[750px] xl:w-[400px] h-[600px] w-[300px]  duration-500 rounded-3xl overflow-hidden relative shadow-xl hover:scale-[102%]" >
-                      <div class="absolute ml-8 mt-14 text-white">
-                          <h6 class="text-[17px] font-medium ">iPadOS + Apps</h6>
-                          <h2 class="text-2xl font-medium">Everyday superpowers.<br> Build it right in.</h2>
-                      </div>
-                      <img class="w-full h-full" src="https://www.apple.com/v/ipad/home/cj/images/overview/consider/fc_ipados__urrua12bwaqy_large.jpg" alt="">
-                      <div class="absolute bottom-4 right-4 ">
-                          <img class="w-8 " src="../../image/mac/plus.png" alt="">
-                      </div>
-                  </div>
-              </div>
+          <div  id="slider" class="flex w-10/12 lg:overflow-x-hidden overflow-x-scroll  mx-auto cursor-pointer group">
+            <ipad-carousal></ipad-carousal>
           </div>
           <!-- chevron -->
           <button id="back" class=" absolute left-4"><img class="xl:w-16 w-10 bg-gray-200/60 xl:px-4 xl:py-4 px-2 py-2 rounded-full opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0  duration-500" src="../../image/chevron/back.png" alt=""></button>
           <button id="next" class=" absolute right-4"><img class="xl:w-16 w-10 bg-gray-200/60 xl:px-4 xl:py-4 px-2 py-2 rounded-full opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0  duration-500" src="../../image/chevron/next.png" alt=""></button>
-      </div>
+      </div> 
    
       <div class="w-full h-full bg-[#fafafa]">
           <div class="max-w-screen-2xl mx-auto lg:px-16 ">
@@ -604,92 +508,9 @@
                           </h1>
                           <li class="lg:text-lg text-sm text-blue-500 list-none my-4"><a href="">Shop Mac> </a></li>                    
                       </div>
-      
-                      <div class="flex relative items-center mb-20 group group-hover:translate-y-0 translate-y-0">
-                          <!-- chevron -->
-                          <button id="backIpad2" class=" absolute left-4 z-[1]"><img class="xl:w-16 w-10 bg-gray-200/60 xl:px-4 xl:py-4 px-2 py-2 rounded-full opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0  duration-500" src="../../image/chevron/back.png" alt=""></button>
-                          <button id="nextIpad2" class=" absolute right-4 z-[1]"><img class="xl:w-16 w-10 bg-gray-200/60 xl:px-4 xl:py-4 px-2 py-2 rounded-full opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0  duration-500" src="../../image/chevron/next.png" alt=""></button>
-      
-                          <div id="sliderIpad2" class=" flex cursor-pointer gap-8 lg:px-8 px-4 py-4 lg:overflow-x-hidden overflow-x-scroll">
-                              <!-- col1 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_apple_card__fa68csvawtei_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl font-semibold py-4 ">Pay over time, <br> interest-free</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">When you choose to check out <br> with Apple Card Monthly <br> installments.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>
-      
-      
-                              <!-- col2 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_trade_in__ca5f20mux4b6_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl font-semibold py-4 ">Save with <br> Apple Trade In.</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">Get credit toward your next Mac <br> when you trade in an eligible <br> device.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>
-      
-      
-      
-                              <!-- col3 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_customize__b6w4i5ax89py_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl  font-semibold py-4 ">Customize your Mac</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">Choose your chip, memory, storage, even color.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>
-      
-      
-      
-                              <!-- col4 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_delivery__fyzranm9416y_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl  font-semibold py-4 ">Get flexible delivery <br> and easy pickup</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">Choose two-hour delivery from an <br> Apple Store, free delivery, or easy <br> pickup options.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>
-      
-      
-      
-                              <!-- col5 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_specialist_alt__fht15dmiclei_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl  font-semibold py-4 ">Shop live with <br> a Specialist.</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">Let us guide you live over vdieo <br> and answer all of your questions.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>
-      
-      
-                              <!-- col6 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_person__bayst2x5jyya_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl  font-semibold py-4 ">Get to know your <br> new Mac.</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">Learn how to get the most out of <br> your new Mac with a freee one-on-<br> one Personal Session.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>
-      
-      
-                              <!-- col7 -->
-                              <div>
-                                  <div class="duration-700 hover:scale-[102%] xl:w-[450px] xl:h-[350px] w-[350px] h-[250px] rounded-3xl overflow-hidden relative px-4 bg-white xl:pt-12 pt-6 xl:pl-12 pl-6 shadow-lg">
-                                      <img src="https://www.apple.com/v/mac/home/bz/images/overview/incentive/icon_asa__urbsp7b9ktuq_large.png" alt="">
-                                      <h3 class="xl:text-3xl text-xl  font-semibold py-4 ">Explore a shopping <br> experience designed <br> around you.</h3>
-                                      <li class="list-none xl:text-xl text-lg font-medium pb-4">Use the Apple Store app to get a more personal way to shop.</li>
-                                      <img class="xl:w-8 w-6 top-[83%] right-8 absolute" src="../../image/mac/plus.png" alt="">
-                                  </div>                    
-                              </div>                        
-                          </div>
+
+                       <ipad-carousal-second></ipad-carousal-second>
+
                       
       
                       </div>
@@ -807,7 +628,7 @@
    
     <footer-layout class="footer"></footer-layout>
   </body>
-  <script src="../script/ipad.js"></script>
-  <script src="../script/layout/navba.js"></script>
-  <script src="../script/layout/footer.js"></script>
+  <script src="./ipad.js"></script>
+  <script src="../../components/navbar.js"></script>
+  <script src="../../components/footer.js"></script>
 </html>
